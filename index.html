@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOPly — Band Organization Platform App | Track Shows, Finances & Merch</title>
-  <meta name="description" content="BOPly helps bands track shows, finances, and merch inventory in one app. Know your profit per show. Tour smarter. Free to start.">
+  <title>BOPly — Band Organization Platform | Track Shows, Finances & Merch</title>
+  <meta name="description" content="BOPly helps bands track shows, finances, and merch inventory in one app. Know your profit per show. Tour smarter. Join the waitlist.">
   <meta name="keywords" content="band management app, tour management, band finances, merch inventory, musician app, band organizer">
   
   <!-- Open Graph -->
   <meta property="og:title" content="BOPly — Your Band's Command Center">
-  <meta property="og:description" content="Track shows, finances, and merch inventory. Know if you're actually making money.">
+  <meta property="og:description" content="Track shows, finances, and merch inventory. Know if you're actually making money. Launching February 2026.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://boply.io">
   <meta property="og:image" content="https://boply.io/og-image.png">
@@ -17,7 +17,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BOPly — Band Management App">
-  <meta name="twitter:description" content="Track shows, finances, and merch. Know your profit per show.">
+  <meta name="twitter:description" content="Track shows, finances, and merch. Know your profit per show. Launching February 2026.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -87,6 +87,10 @@
     html {
       scroll-behavior: smooth;
     }
+    /* Tally form styling */
+    iframe[data-tally-src] {
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-white antialiased">
@@ -120,9 +124,8 @@
         
         <!-- CTA -->
         <div class="flex items-center gap-4">
-          <a href="https://app.boply.io" class="hidden sm:block text-sm text-gray-400 hover:text-white transition-colors">Log In</a>
-          <a href="https://app.boply.io/signup" class="px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
-            Get Started Free
+          <a href="#waitlist" class="px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
+            Join Waitlist
           </a>
         </div>
       </div>
@@ -130,7 +133,7 @@
   </nav>
   
   <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+  <section id="waitlist" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
     <!-- Background blobs -->
     <div class="blob w-96 h-96 bg-purple-500 -top-48 -left-48"></div>
     <div class="blob w-96 h-96 bg-blue-500 -bottom-48 -right-48" style="animation-delay: -5s;"></div>
@@ -139,7 +142,7 @@
       <!-- Badge -->
       <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full mb-8">
         <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-        <span class="text-sm text-gray-300">Launching on iOS, Android, and Web in February 2026</span>
+        <span class="text-sm text-gray-300">Launching on iOS, Android & Web — February 2026</span>
       </div>
       
       <!-- Headline -->
@@ -154,20 +157,20 @@
         <span class="text-white">Know your profit per show.</span> Get organized. Go further.
       </p>
       
-      <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-        <a href="https://app.boply.io/signup" class="group w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/25 transition-all flex items-center justify-center gap-2">
-          Start Free
-          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-          </svg>
-        </a>
-        <a href="#demo" class="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 rounded-xl font-semibold text-lg hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M8 5v14l11-7z"/>
-          </svg>
-          Watch Demo
-        </a>
+      <!-- Waitlist Form -->
+      <div class="max-w-md mx-auto mb-16">
+        <iframe 
+          data-tally-src="https://tally.so/embed/EkqN1N?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&theme=dark" 
+          loading="lazy" 
+          width="100%" 
+          height="200" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0" 
+          title="Join the BOPly Waitlist"
+        ></iframe>
+        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        <p class="text-gray-500 text-sm mt-4">Join the waitlist for early access + founding member pricing.</p>
       </div>
       
       <!-- App Preview -->
@@ -398,69 +401,46 @@
     </div>
   </section>
   
-  <!-- Social Proof -->
+  <!-- Social Proof / Benefits -->
   <section class="py-20 sm:py-32 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="max-w-3xl mx-auto text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-6">Trusted by bands who take business seriously</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6">Built for bands who take business seriously</h2>
+        <p class="text-gray-400 text-lg">Join musicians who are ready to take control of their band's finances.</p>
       </div>
       
       <div class="grid md:grid-cols-3 gap-6">
-        <!-- Testimonial 1 -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <!-- Benefit 1 -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
           </div>
-          <p class="text-gray-300 mb-4">"We used to finish tours with no clue if we made money. Now I know our profit before we even get home. Game changer."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center font-bold">J</div>
-            <div>
-              <p class="font-semibold text-sm">Jake M.</p>
-              <p class="text-gray-500 text-sm">The Midnight Revival</p>
-            </div>
-          </div>
+          <h3 class="text-xl font-semibold mb-2">Save Hours Weekly</h3>
+          <p class="text-gray-400">No more spreadsheet chaos or hunting through receipts. Everything in one place.</p>
         </div>
         
-        <!-- Testimonial 2 -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <!-- Benefit 2 -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
           </div>
-          <p class="text-gray-300 mb-4">"The merch tracking alone has saved us hundreds of dollars. We actually know what sizes to reorder now."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center font-bold">S</div>
-            <div>
-              <p class="font-semibold text-sm">Sarah K.</p>
-              <p class="text-gray-500 text-sm">Velvet Chains</p>
-            </div>
-          </div>
+          <h3 class="text-xl font-semibold mb-2">Boost Your Profits</h3>
+          <p class="text-gray-400">Know exactly what's working. Make smarter decisions about merch, routing, and pricing.</p>
         </div>
         
-        <!-- Testimonial 3 -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <!-- Benefit 3 -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
           </div>
-          <p class="text-gray-300 mb-4">"I manage 3 bands. BOPly lets me keep everything separate but accessible. So much better than my old system."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center font-bold">M</div>
-            <div>
-              <p class="font-semibold text-sm">Marcus T.</p>
-              <p class="text-gray-500 text-sm">Band Manager</p>
-            </div>
-          </div>
+          <h3 class="text-xl font-semibold mb-2">Keep Everyone Aligned</h3>
+          <p class="text-gray-400">Your whole band stays in sync without endless group chat threads.</p>
         </div>
       </div>
     </div>
@@ -507,8 +487,8 @@
               <span>2 band members</span>
             </li>
           </ul>
-          <a href="https://app.boply.io/signup" class="block w-full py-3 text-center bg-white/10 border border-white/20 rounded-xl font-semibold hover:bg-white/20 transition-colors">
-            Get Started Free
+          <a href="#waitlist" class="block w-full py-3 text-center bg-white/10 border border-white/20 rounded-xl font-semibold hover:bg-white/20 transition-colors">
+            Join Waitlist
           </a>
         </div>
         
@@ -552,8 +532,8 @@
               <span>Early access to new features</span>
             </li>
           </ul>
-          <a href="https://app.boply.io/signup?plan=pro" class="block w-full py-3 text-center bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl font-semibold hover:opacity-90 transition-opacity">
-            Start 14-Day Free Trial
+          <a href="#waitlist" class="block w-full py-3 text-center bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl font-semibold hover:opacity-90 transition-opacity">
+            Join Waitlist
           </a>
         </div>
       </div>
@@ -575,6 +555,17 @@
         <!-- FAQ Item 1 -->
         <details class="group bg-white/5 border border-white/10 rounded-xl">
           <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <span class="font-semibold">When does BOPly launch?</span>
+            <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-6 pb-6 text-gray-400">
+            We're launching in February 2026 on iOS, Android, and Web. Join the waitlist to get early access and founding member pricing.
+          </div>
+        </details>
+        
+        <!-- FAQ Item 2 -->
+        <details class="group bg-white/5 border border-white/10 rounded-xl">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
             <span class="font-semibold">Is my data secure?</span>
             <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
@@ -583,7 +574,7 @@
           </div>
         </details>
         
-        <!-- FAQ Item 2 -->
+        <!-- FAQ Item 3 -->
         <details class="group bg-white/5 border border-white/10 rounded-xl">
           <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
             <span class="font-semibold">Can my whole band use this?</span>
@@ -594,7 +585,7 @@
           </div>
         </details>
         
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 4 -->
         <details class="group bg-white/5 border border-white/10 rounded-xl">
           <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
             <span class="font-semibold">Does it work offline?</span>
@@ -605,7 +596,7 @@
           </div>
         </details>
         
-        <!-- FAQ Item 4 -->
+        <!-- FAQ Item 5 -->
         <details class="group bg-white/5 border border-white/10 rounded-xl">
           <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
             <span class="font-semibold">Can I manage multiple bands?</span>
@@ -616,25 +607,14 @@
           </div>
         </details>
         
-        <!-- FAQ Item 5 -->
-        <details class="group bg-white/5 border border-white/10 rounded-xl">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <span class="font-semibold">What if I need help?</span>
-            <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <div class="px-6 pb-6 text-gray-400">
-            We're musicians too — we get it. Reach out anytime at support@boply.io. Pro users get priority support with faster response times.
-          </div>
-        </details>
-        
         <!-- FAQ Item 6 -->
         <details class="group bg-white/5 border border-white/10 rounded-xl">
           <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <span class="font-semibold">Can I cancel anytime?</span>
+            <span class="font-semibold">What do I get for joining the waitlist?</span>
             <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <div class="px-6 pb-6 text-gray-400">
-            Yes, cancel anytime with no questions asked. Your data remains accessible even after canceling — we don't hold it hostage.
+            Waitlist members get early access before public launch, founding member pricing (locked in forever), and behind-the-scenes updates as we build BOPly.
           </div>
         </details>
       </div>
@@ -649,17 +629,24 @@
         <span class="gradient-text">actually makes money?</span>
       </h2>
       <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-        Join thousands of musicians who've taken control of their band's business. Start free today.
+        Join the waitlist and be first in line when BOPly launches in February 2026.
       </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://app.boply.io/signup" class="group w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/25 transition-all flex items-center justify-center gap-2">
-          Get Started Free
-          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-          </svg>
-        </a>
+      
+      <!-- Waitlist Form (Bottom) -->
+      <div class="max-w-md mx-auto">
+        <iframe 
+          data-tally-src="https://tally.so/embed/EkqN1N?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&theme=dark" 
+          loading="lazy" 
+          width="100%" 
+          height="200" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0" 
+          title="Join the BOPly Waitlist"
+        ></iframe>
       </div>
-      <p class="text-gray-500 text-sm mt-6">No credit card required • Free forever plan available</p>
+      
+      <p class="text-gray-500 text-sm mt-6">No spam, ever. Unsubscribe anytime.</p>
     </div>
   </section>
   
@@ -688,8 +675,7 @@
           <a href="#features" class="hover:text-white transition-colors">Features</a>
           <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
           <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
-          <a href="/press" class="hover:text-white transition-colors">Press</a>
-          <a href="mailto:support@boply.io" class="hover:text-white transition-colors">Contact</a>
+          <a href="mailto:hello@boply.io" class="hover:text-white transition-colors">Contact</a>
         </div>
         
         <!-- Social -->
@@ -707,7 +693,7 @@
       </div>
       
       <div class="mt-8 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-        <p>© 2024 BOPly. All rights reserved.</p>
+        <p>© 2025 BOPly. All rights reserved.</p>
         <div class="flex items-center gap-6">
           <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
           <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
