@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & Help | Boply - Band & Gig Management</title>
+  <meta name="description" content="Get help with Boply. Find answers to frequently asked questions, learn how to use features, and contact our support team.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Boply Support & Help Center">
+  <meta property="og:description" content="Get help with Boply. FAQs, how-to guides, and contact support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://boply.io/support">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+      min-height: 100vh;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #a855f7, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .header p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+    
+    /* Navigation */
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+    
+    .nav-links a {
+      color: #a855f7;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    
+    .nav-links a:hover {
+      background: rgba(168, 85, 247, 0.1);
+      color: #c084fc;
+    }
+    
+    /* Sections */
+    .section {
+      margin-bottom: 50px;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .section-title .icon {
+      font-size: 1.5rem;
+    }
+    
+    /* Cards */
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 20px;
+      transition: all 0.3s;
+    }
+    
+    .card:hover {
+      border-color: rgba(168, 85, 247, 0.3);
+      background: rgba(255, 255, 255, 0.07);
+    }
+    
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .card p, .card ol, .card ul {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+    
+    .card ol, .card ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    
+    .card li {
+      margin-bottom: 8px;
+    }
+    
+    /* FAQ Accordion */
+    .faq-item {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      width: 100%;
+      padding: 20px 25px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s;
+    }
+    
+    .faq-question:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    
+    .faq-question .arrow {
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+    
+    .faq-item.open .faq-question .arrow {
+      transform: rotate(180deg);
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+    
+    .faq-answer-content {
+      padding: 0 25px 20px 25px;
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+    
+    /* Contact Section */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(59, 130, 246, 0.2));
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .contact-card h3 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    
+    .contact-card p {
+      color: #c4b5fd;
+      margin-bottom: 25px;
+      font-size: 1.05rem;
+    }
+    
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #a855f7, #7c3aed);
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px rgba(168, 85, 247, 0.3);
+    }
+    
+    .contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(168, 85, 247, 0.4);
+    }
+    
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    
+    .footer a {
+      color: #a855f7;
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 1.5rem;
+      }
+      
+      .section-title {
+        font-size: 1.25rem;
+      }
+      
+      .contact-card {
+        padding: 30px 20px;
+      }
+      
+      .nav-links {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">Boply</div>
+      <h1>Support & Help Center</h1>
+      <p>Everything you need to get the most out of Boply</p>
+    </div>
+    
+    <!-- Navigation -->
+    <div class="nav-links">
+      <a href="#getting-started">Getting Started</a>
+      <a href="#how-to">How-To Guides</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    
+    <!-- Getting Started -->
+    <div class="section" id="getting-started">
+      <h2 class="section-title"><span class="icon">🚀</span> Getting Started</h2>
+      
+      <div class="card">
+        <h3>Creating Your Account</h3>
+        <ol>
+          <li>Download Boply from the App Store or Google Play, or visit <strong>app.boply.io</strong></li>
+          <li>Tap <strong>Sign Up</strong> and enter your email and password</li>
+          <li>Enter a display name (this is how your bandmates will see you)</li>
+          <li>You're in! Start by creating your band or trying Demo Mode</li>
+        </ol>
+      </div>
+      
+      <div class="card">
+        <h3>Creating Your Band</h3>
+        <ol>
+          <li>After signing up, tap <strong>Create Band</strong></li>
+          <li>Enter your band name</li>
+          <li>You're now the admin! You can invite members, add shows, and manage everything</li>
+        </ol>
+      </div>
+      
+      <div class="card">
+        <h3>Inviting Band Members</h3>
+        <ol>
+          <li>Go to <strong>Settings</strong> from the menu</li>
+          <li>Tap <strong>Invite Members</strong></li>
+          <li>Share the invite link with your bandmates via text, email, or any app</li>
+          <li>When they click the link and sign up, they'll automatically join your band</li>
+        </ol>
+      </div>
+      
+      <div class="card">
+        <h3>Try Demo Mode</h3>
+        <p>Want to explore before committing? Select <strong>Try Demo</strong> on the welcome screen. You'll see sample shows, inventory, contacts, and polls so you can test all the features. No account required!</p>
+      </div>
+    </div>
+    
+    <!-- How-To Guides -->
+    <div class="section" id="how-to">
+      <h2 class="section-title"><span class="icon">📖</span> How-To Guides</h2>
+      
+      <div class="card">
+        <h3>Adding a Show</h3>
+        <ol>
+          <li>Go to the <strong>Calendar</strong> tab</li>
+          <li>Tap the <strong>+</strong> button or tap on a date</li>
+          <li>Fill in the details: venue, city, date, load-in time, set time, guarantee</li>
+          <li>Set the status (Tentative, Confirmed, or Completed)</li>
+          <li>Add contact info for the venue or promoter</li>
+          <li>Tap <strong>Save</strong></li>
+        </ol>
+      </div>
+      
+      <div class="card">
+        <h3>Tracking Income & Expenses</h3>
+        <ol>
+          <li>Open any show from the Calendar or Timeline</li>
+          <li>Scroll to the <strong>Finances</strong> section</li>
+          <li>Add your guarantee/payout under Income</li>
+          <li>Tap <strong>Add Expense</strong> to log gas, food, hotels, etc.</li>
+          <li>Your profit is calculated automatically!</li>
+        </ol>
+        <p style="margin-top: 15px;">💡 <strong>Tip:</strong> You can also add general band expenses (not tied to a specific show) from the Dashboard.</p>
+      </div>
+      
+      <div class="card">
+        <h3>Managing Merch Inventory</h3>
+        <ol>
+          <li>Go to the <strong>Inventory</strong> tab</li>
+          <li>Tap <strong>Add Item</strong></li>
+          <li>Enter the item name, category, cost, and price</li>
+          <li>Add size variants (S, M, L, XL) with quantities for each</li>
+          <li>Save the item</li>
+        </ol>
+        <p style="margin-top: 15px;">You'll get low-stock alerts when items are running low!</p>
+      </div>
+      
+      <div class="card">
+        <h3>Using Sales Mode</h3>
+        <p>Sales Mode turns your phone into a merch booth at shows:</p>
+        <ol>
+          <li>Go to <strong>Inventory</strong> and tap <strong>Sales Mode</strong></li>
+          <li>Select the show you're selling at</li>
+          <li>Tap items to add them to the sale</li>
+          <li>Select sizes when prompted</li>
+          <li>Complete the sale — inventory updates automatically!</li>
+        </ol>
+        <p style="margin-top: 15px;">⭐ Sales Mode is a Pro feature.</p>
+      </div>
+      
+      <div class="card">
+        <h3>Creating Band Polls</h3>
+        <ol>
+          <li>Go to the <strong>Polls</strong> tab</li>
+          <li>Tap <strong>Create Poll</strong></li>
+          <li>Enter your question (e.g., "Should we take this gig?")</li>
+          <li>Add options for members to vote on</li>
+          <li>Optionally attach show details</li>
+          <li>Band members can vote from their devices</li>
+        </ol>
+      </div>
+      
+      <div class="card">
+        <h3>Storing Documents</h3>
+        <ol>
+          <li>Go to the <strong>Documents</strong> tab</li>
+          <li>Tap <strong>Add Document</strong></li>
+          <li>Upload a photo or file (contracts, stage plots, riders, etc.)</li>
+          <li>Name the document and add notes</li>
+          <li>Optionally attach it to a specific show</li>
+        </ol>
+      </div>
+      
+      <div class="card">
+        <h3>Exporting Financial Data</h3>
+        <ol>
+          <li>Go to <strong>Reports</strong> from the Dashboard</li>
+          <li>Select a date range</li>
+          <li>Tap <strong>Export</strong></li>
+          <li>Choose CSV format</li>
+          <li>Share or save the file for your records or taxes</li>
+        </ol>
+        <p style="margin-top: 15px;">⭐ Exports are a Pro feature.</p>
+      </div>
+    </div>
+    
+    <!-- FAQs -->
+    <div class="section" id="faq">
+      <h2 class="section-title"><span class="icon">❓</span> Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          Is Boply free to use?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            Yes! Boply has a generous free tier that includes 1 band, up to 3 members, 50 inventory items, and access to the calendar, financial tracking, contacts, documents, and band polls. Pro ($7.99/month) unlocks unlimited everything, Sales Mode, exports, and removes ads.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          Can my whole band use the app?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            Absolutely! Invite your bandmates via a shareable link. Everyone can see the schedule and stay in sync. Admins have full access to finances and settings, while regular members see the schedule without sensitive financial data.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          Does Boply work offline?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            Yes! You can view your data and make changes offline. When you're back online, everything syncs automatically.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          What's the difference between Admin and Member roles?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            <strong>Admins</strong> can see and edit everything: shows, finances, inventory, contacts, documents, polls, and settings. They can also invite new members.<br><br>
+            <strong>Members</strong> can see the schedule, vote on polls, and view shared info — but they can't see sensitive financial details like guarantees and payouts.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I cancel my Pro subscription?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            Subscriptions are managed through the App Store (iOS) or Google Play (Android). Go to your device's subscription settings to cancel. You'll keep Pro access until the end of your billing period.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I use Boply for multiple bands?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            The free tier supports 1 band. If you're in multiple projects, Pro unlocks multi-band support so you can switch between them easily.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I delete my account and data?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            Email us at <a href="mailto:Contact@app.boply.io" style="color: #a855f7;">Contact@app.boply.io</a> with your account email and request deletion. We'll remove your account and all associated data within 30 days.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          Is my data secure?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            Yes. Boply uses Firebase (by Google) for authentication and data storage. All data is encrypted in transit and at rest. We never sell your data or share it with third parties for advertising.
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          What if I find a bug or have a feature request?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+            We'd love to hear from you! Use the <strong>Send Feedback</strong> option in the app's settings menu, or email us directly at <a href="mailto:Contact@app.boply.io" style="color: #a855f7;">Contact@app.boply.io</a>. We read every message.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <h2 class="section-title"><span class="icon">💬</span> Still Need Help?</h2>
+      
+      <div class="contact-card">
+        <h3>Contact Our Support Team</h3>
+        <p>Can't find the answer you're looking for? We're here to help.<br>We typically respond within 24 hours.</p>
+        <a href="mailto:Contact@app.boply.io" class="contact-btn">
+          ✉️ Email Support
+        </a>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        <a href="https://boply.io">Home</a> · 
+        <a href="https://boply.io/privacy">Privacy Policy</a> · 
+        <a href="https://boply.io/terms">Terms of Service</a>
+      </p>
+      <p style="margin-top: 15px;">© 2025 Boply. Built for musicians, by musicians. 🎸</p>
+    </div>
+  </div>
+  
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isOpen = item.classList.contains('open');
+        
+        // Close all other items
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        
+        // Toggle current item
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
