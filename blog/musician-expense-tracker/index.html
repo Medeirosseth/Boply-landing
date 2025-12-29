@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musician Expense Tracker: How to Actually Know If Your Band Is Making Money | Boply</title>
+  <meta name="description" content="Gas, food, hotels, gear—do you actually know if your band made money? A musician expense tracker shows you the real numbers, show by show.">
+  <meta name="keywords" content="musician expense tracker, band finances, gig expenses, band money management, touring expenses">
+  <link rel="canonical" href="https://boply.io/blog/musician-expense-tracker">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Musician Expense Tracker: How to Actually Know If Your Band Is Making Money">
+  <meta property="og:description" content="Gas, food, hotels, gear—do you actually know if your band made money? A musician expense tracker shows you the real numbers, show by show.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://boply.io/blog/musician-expense-tracker">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Musician Expense Tracker: How to Actually Know If Your Band Is Making Money">
+  <meta name="twitter:description" content="Gas, food, hotels, gear—do you actually know if your band made money? A musician expense tracker shows you the real numbers, show by show.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#8B5CF6">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              purple: '#8B5CF6',
+              blue: '#3B82F6',
+              indigo: '#6366F1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.2;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-white antialiased">
+  
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2">
+          <svg class="w-8 h-8" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#8B5CF6"/>
+                <stop offset="100%" style="stop-color:#3B82F6"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="22" height="22" rx="6" fill="url(#logoGrad)" opacity="0.5"/>
+            <rect x="14" y="14" width="22" height="22" rx="6" fill="url(#logoGrad)" opacity="0.75"/>
+            <rect x="26" y="26" width="22" height="22" rx="6" fill="url(#logoGrad)"/>
+          </svg>
+          <span class="text-xl font-bold">Bop<span class="text-gray-400">ly</span></span>
+        </a>
+        
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/#features" class="text-sm text-gray-400 hover:text-white transition-colors">Features</a>
+          <a href="/#pricing" class="text-sm text-gray-400 hover:text-white transition-colors">Pricing</a>
+          <a href="/#faq" class="text-sm text-gray-400 hover:text-white transition-colors">FAQ</a>
+          <a href="/blog" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a>
+        </div>
+        
+        <!-- CTA -->
+        <div class="flex items-center gap-4">
+          <a href="/#waitlist" class="px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
+            Join Waitlist
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Article Header -->
+  <section class="relative pt-32 pb-12 overflow-hidden">
+    <!-- Background blob -->
+    <div class="blob w-96 h-96 bg-purple-500 -top-48 -right-48"></div>
+    
+    <div class="relative max-w-3xl mx-auto px-4 sm:px-6">
+      <!-- Back to blog -->
+      <a href="/blog" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        <span class="text-sm">Back to Blog</span>
+      </a>
+      
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+        Musician Expense Tracker: How to Actually Know If Your Band Is Making Money
+      </h1>
+      <p class="text-gray-400">By Boply Team • December 22, 2025 • 5 min read</p>
+    </div>
+  </section>
+  
+  <!-- Article Content -->
+  <article class="pb-20 sm:pb-32">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="prose prose-lg prose-invert max-w-none">
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">Here's a question that haunts every gigging musician: after gas, food, strings, and that broken cable you had to replace at the last minute—did you actually make money on that show?</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">If your answer is "I think so?" or "probably?" you're not alone. Most bands have no idea whether they're profitable because tracking expenses feels like a chore nobody wants to do.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">But here's the thing: you don't need a finance degree or a complicated spreadsheet. You just need a simple way to log what you spend so you can see the real picture.</p>
+        
+        <h2 class="text-2xl font-bold mt-12 mb-6 text-white">The Expenses That Quietly Kill Your Profit</h2>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">A $500 guarantee sounds great until you factor in reality. Gas to get there and back. Tolls. Dinner for four people. A hotel if the drive is too long. Parking. New strings because yours broke at soundcheck.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">These costs add up fast, and they're easy to forget. You drove home thinking you made $500, but you actually netted $180 split four ways. That's $45 each for a 10-hour day.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">The problem isn't that you spent the money—sometimes you have to. The problem is <strong class="text-white">not knowing</strong> what you spent. Without that information, you can't make smart decisions about which gigs are worth taking.</p>
+        
+        <h2 class="text-2xl font-bold mt-12 mb-6 text-white">Why Spreadsheets Don't Work for Musicians</h2>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">You've probably tried a spreadsheet at some point. Maybe it lasted a month. Maybe a week. Then life happened—you got busy, forgot to log a few things, and suddenly the spreadsheet was useless.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">Spreadsheets fail musicians for a simple reason: they're not where you are. When you're pumping gas at 11pm after a gig, you're not going to open your laptop and update a spreadsheet. You're going to pay, get back in the van, and forget about it.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">A musician expense tracker needs to be on your phone, simple enough to use in 10 seconds, and connected to the show it belongs to. Log it in the moment or it doesn't get logged at all.</p>
+        
+        <h2 class="text-2xl font-bold mt-12 mb-6 text-white">What Good Expense Tracking Looks Like</h2>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">The best expense tracker for musicians isn't a generic finance app. It's something built around how bands actually work—show by show.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">You play a show. You log the guarantee you got paid. You add expenses as they happen—gas, food, gear, whatever. The app calculates your actual profit automatically. Done.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">Now multiply that by 20 shows and you start seeing patterns. Maybe gigs more than 2 hours away never net more than $100. Maybe that one venue always costs you more in expenses than you expect. Maybe you're spending way more on food than you realized.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">That's the power of tracking: <strong class="text-white">you can actually see what's happening</strong> instead of guessing.</p>
+        
+        <h2 class="text-2xl font-bold mt-12 mb-6 text-white">Common Expenses to Track</h2>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">If you're just getting started, here are the expenses that matter most for gigging bands:</p>
+        
+        <div class="space-y-4 mb-6">
+          <p class="text-lg text-gray-300"><strong class="text-white">Transportation:</strong> Gas, tolls, parking, vehicle maintenance, rental cars if needed</p>
+          
+          <p class="text-lg text-gray-300"><strong class="text-white">Food and drinks:</strong> Meals on the road, drinks at the venue (be honest with yourself here)</p>
+          
+          <p class="text-lg text-gray-300"><strong class="text-white">Lodging:</strong> Hotels, Airbnbs, or that $20 you gave your friend for crashing on their couch</p>
+          
+          <p class="text-lg text-gray-300"><strong class="text-white">Gear:</strong> Strings, sticks, cables, batteries, last-minute replacements</p>
+          
+          <p class="text-lg text-gray-300"><strong class="text-white">Merch costs:</strong> What you paid for the shirts, stickers, and records you're selling</p>
+          
+          <p class="text-lg text-gray-300"><strong class="text-white">Promo:</strong> Flyers, Facebook ads, posters</p>
+        </div>
+        
+        <h2 class="text-2xl font-bold mt-12 mb-6 text-white">It's Not About Being Cheap—It's About Being Smart</h2>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">Tracking expenses isn't about penny-pinching or cutting corners. It's about making informed decisions.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">Maybe that far-away gig is worth it because it's building your audience in a new city. Maybe it's not worth it because you've played there three times and it never pays off. You can't know unless you have the numbers.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">The bands that sustain themselves over the long haul aren't necessarily the ones making the most money. They're the ones who <strong class="text-white">understand their money</strong>—what comes in, what goes out, and what's left over.</p>
+        
+        <p class="text-lg text-gray-300 leading-relaxed mb-6">A musician expense tracker is just a tool that makes that understanding possible without turning you into an accountant.</p>
+        
+        <!-- CTA Box -->
+        <div class="mt-12 p-8 bg-gradient-to-br from-purple-900/30 to-blue-900/30 border border-purple-500/20 rounded-2xl">
+          <p class="text-lg text-gray-300 mb-0">Boply makes expense tracking simple for bands. Log income and expenses per show, see your real profit instantly, and finally know if you're actually making money. <a href="https://boply.io" class="text-purple-400 font-semibold hover:text-purple-300 transition-colors">Start free at boply.io</a>.</p>
+        </div>
+        
+      </div>
+    </div>
+  </article>
+  
+  <!-- More Posts -->
+  <section class="py-16 border-t border-white/5">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h3 class="text-xl font-bold mb-8">More from the blog</h3>
+      
+      <a href="/blog/why-every-indie-band-needs-a-band-management-app" class="block bg-white/5 border border-white/10 rounded-2xl p-6 transition-all duration-300 hover:border-purple-500/50 hover:bg-white/[0.07]">
+        <div class="flex items-center gap-3 text-sm text-gray-500 mb-2">
+          <span>December 15, 2025</span>
+          <span class="w-1 h-1 bg-gray-600 rounded-full"></span>
+          <span>5 min read</span>
+        </div>
+        <h4 class="text-lg font-semibold text-white mb-2">Why Every Indie Band Needs a Band Management App in 2025</h4>
+        <p class="text-gray-400 text-sm">You just finished a killer set. The crowd loved it. You sold a bunch of merch. But here's the question that's surprisingly hard to answer...</p>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="py-12 border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2">
+          <svg class="w-8 h-8" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#8B5CF6"/>
+                <stop offset="100%" style="stop-color:#3B82F6"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="22" height="22" rx="6" fill="url(#logoGrad2)" opacity="0.5"/>
+            <rect x="14" y="14" width="22" height="22" rx="6" fill="url(#logoGrad2)" opacity="0.75"/>
+            <rect x="26" y="26" width="22" height="22" rx="6" fill="url(#logoGrad2)"/>
+          </svg>
+          <span class="text-lg font-bold">Bop<span class="text-gray-400">ly</span></span>
+        </a>
+        
+        <!-- Links -->
+        <div class="flex items-center gap-8 text-sm text-gray-400">
+          <a href="/#features" class="hover:text-white transition-colors">Features</a>
+          <a href="/#pricing" class="hover:text-white transition-colors">Pricing</a>
+          <a href="/#faq" class="hover:text-white transition-colors">FAQ</a>
+          <a href="/blog" class="hover:text-white transition-colors">Blog</a>
+          <a href="mailto:hello@boply.io" class="hover:text-white transition-colors">Contact</a>
+        </div>
+        
+        <!-- Social -->
+        <div class="flex items-center gap-4">
+          <a href="https://instagram.com/boplyapp" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@boplyapp" class="text-gray-400 hover:text-white transition-colors" aria-label="TikTok">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+          </a>
+          <a href="https://twitter.com/boplyapp" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="mt-8 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+        <p>© 2025 Boply. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
